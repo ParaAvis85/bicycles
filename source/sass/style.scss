@@ -1,3 +1,5 @@
-h1 {
-  color: red;
-}
+@import "global/normalize.scss";
+@import "global/variabless.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+@import "global/content.scss";
