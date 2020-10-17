@@ -36,15 +36,19 @@
 
   <main class="page-main">
     <section class="promo">
-      <div>
-        <h1 class="promo__title">
-          Мы продаем
-          велосипеды
-        </h1>
-        <p class="promo__text">
-          Наш магазин отбирает только самые
-          лучшие велосипеды для продажи
-        </p>
+      <div class="promo__content-wrapper">
+        <a class="promo__logo">
+          <img src="img/logo.svg" width="68" height="20" alt="Логотип интернет-магазина Moon">
+        </a>
+        <div class="promo__text-wrapper">
+          <h1>
+            Мы продаем
+            велосипеды
+          </h1>
+          <p>Наш магазин отбирает только самые
+             лучшие велосипеды для продажи
+          </p>
+        </div>
       </div>
       <form class="promo__form form" method="POST" action="https://echo.htmlacademy.ru">
         <p class="form__text">
@@ -91,19 +95,28 @@
       <ul class="types-bicycles__list">
         <li class="types-bicycles__item">
           <a>
-            <img src="img/road-bikes-desktop.jpg" srcset="img/road-bikes-desktop@2x.jpg" width="342" height="503" alt="Дорожный велосипед">
+            <picture>
+              <source type="image/webp" srcset="img/road-bikes-desktop.webp 1x, img/road-bikes-desktop@2x.webp 2x">
+              <img src="img/road-bikes-desktop.jpg" srcset="img/road-bikes-desktop@2x.jpg" width="342" height="503" alt="Дорожный велосипед">
+            </picture>
             <h3 class="types-bicycles__text">Дорожный велосипед</h3>
           </a>
         </li>
         <li class="types-bicycles__item">
           <a>
-            <img src="img/mountain-bikes-desktop.jpg" srcset="img/mountain-bikes-desktop@2x.jpg" width="342" height="566" alt="Горный велосипед">
+            <picture>
+              <source type="image/webp" srcset="img/mountain-bikes-desktop/webp 1x, img/mountain-bikes-desktop@2x.webp 2x">
+              <img src="img/mountain-bikes-desktop.jpg" srcset="img/mountain-bikes-desktop@2x.jpg" width="342" height="566" alt="Горный велосипед">
+            </picture>
             <h3 class="types-bicycles__text">Горный велосипед</h3>
           </a>
         </li>
         <li class="types-bicycles__item">
           <a>
-            <img src="img/kids-bikes-desktop.jpg" srcset="img/kids-bikes-desktop@2x.jpg" width="342" height="503" alt="Детский велосипед">
+            <picture>
+              <source type="image/webp" srcset="img/kids-bikes-desktop.webp 1x, img/kids-bikes-desktop@2x.webp 2x">
+              <img src="img/kids-bikes-desktop.jpg" srcset="img/kids-bikes-desktop@2x.jpg" width="342" height="503" alt="Детский велосипед">
+            </picture>
             <h3 class="types-bicycles__text">Детский велосипед</h3>
           </a>
         </li>
@@ -121,8 +134,11 @@
         </p>
       </div>
       <div class="video__img-wrapper">
+        <picture>
+          <source type="image/webp" srcset="img/video-img-desktop.webp 1x, img/video-img-desktop@2x.webp 2x">
           <img src="img/video-img-desktop.jpg" srcset="img/video-img-desktop@2x.jpg"  width="929" height="522"
             alt="Видео о велосипедах">
+          </picture>
         <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
         </button>
       </div>
@@ -144,8 +160,11 @@
           <iframe class="contacts__map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589733413226!5m2!1sru!2sru"
             height="530" aria-label="Интерактивная карта" tabindex="0"></iframe>
-            <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg" width="957" height="530"
+            <picture>
+              <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@x2.webp 2x">
+              <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg" width="957" height="530"
               alt="Месторасположение магазина Moon на карте">
+            </picture>
         </div>
         <div class="contacts__wrapper-list container">
           <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">
