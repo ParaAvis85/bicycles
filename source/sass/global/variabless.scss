@@ -1,11 +1,22 @@
 // цвета
 $black: #000000;
 $white: #ffffff;
+$aqua: #0ad9c6;
+$title: #1f1f1f;
+$background-types:#f6f7f9;
+$background-video:#131314;
+$contacts-50:rgba(0, 0, 0, 0.5);
+$contacts-70:rgba(0, 0, 0, 0.7);
+$border: #c9ccd4;
+$placeholder: #1c1c1c;
+
+$text-menu: #48494d;
+$background-menu: #f6f6f6;
 
 // шрифты
 
-$font-main: "Opensans", "Arial", sans-serif;
-$font-other: "Overpass", "Arial", sans-serif;
+$font-main: "Open Sans", "Arial", sans-serif;
+$font-other: "OverPass", "Arial", sans-serif;
 
 // размеры
 $mobile-width: 320px;
@@ -14,7 +25,7 @@ $tablet-width: 768px;
 $only-tablet-width: 1023px;
 $desktop-width-min: 1024px;
 $only-desktop-width: 1229px;
-$desktop-width: 1230px;
+$desktop-width: 1280px;
 
 // разрешение экрана
 $retina-dpi: 144dpi;
