@@ -1,0 +1,37 @@
+.main-nav__list {
+  @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(-50%);
+  left: 50%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 875px;
+}
+
+.main-nav__item:not(:last-child) {
+  padding-right: 134px;
+}
+
+.main-nav__item-link {
+  @include text(16px, 32px);
+  font-weight: 300;
+  color: $white;
+  opacity: 0.7;
+  text-decoration: none;
+  letter-spacing: -0.005em;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: $aqua;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
