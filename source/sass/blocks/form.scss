@@ -1,0 +1,31 @@
+.form__text {
+  @include text (17px, 28px);
+  color: $white;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.form__row {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  @include text (15px, 24px);
+  color: $placeholder;
+  font-weight: 400;
+  opacity: 0.5;
+  border: 1px solid $border;
+  padding: 11px 30px;
+  height: 48px;
+  width: 100%;
+}
+
+.form__button {
+  @include text (15px, 21px);
+  font-weight: 600;
+  color: $black;
+  text-align: center;
+  background-color: $aqua;
+  width: 100%;
+  padding: 15px 25px;
+}

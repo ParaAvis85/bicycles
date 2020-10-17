@@ -19,3 +19,32 @@
     margin-bottom: 70px;
   }
 }
+
+.promo__title {
+  @include text(46px, 64px);
+  color: $white;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+.promo__text {
+  @include text(20px, 32px);
+  color: $white;
+  font-weight: 300;
+  opacity: 0.8;
+  letter-spacing: -0.005em;
+}
+
+.promo__wrapper {
+  display: flex;
+  padding: 318px 2% 80px 13.8%;
+}
+
+.promo__content-wrapper {
+  width: 400px;
+  margin-right: 14.6%;
+}
+
+.promo__form-wrapper {
+  width: 327px;
+}
