@@ -1,0 +1,39 @@
+.video {
+  background-color: $background-video;
+}
+
+.video__wrapper-text {
+  width: 350px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+.video__title {
+  @include text (30px, 30px);
+  font-weight: 600;
+
+  letter-spacing: -0.005em;
+  color: $white;
+  text-align: center;
+}
+
+.video__text {
+  @include text (16px, 28px);
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: $white;
+  opacity: 0.7;
+  margin-bottom: 55px;
+}
+
+.video__img-wrapper {
+  width: 76.3%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video__button-play {
+  position: absolute;
+}
