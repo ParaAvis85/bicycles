@@ -38,6 +38,14 @@
 .promo__wrapper {
   display: flex;
   padding: 318px 2% 80px 13.8%;
+
+  @media (max-width: 1439px) {
+    padding-left: 13.8%;
+  }
+
+  @media (max-width: 1150px) {
+    padding-left: 10%;
+  }
 }
 
 .promo__content-wrapper {
