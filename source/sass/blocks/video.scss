@@ -36,4 +36,9 @@
 
 .video__button-play {
   position: absolute;
+  top: calc(50% - 38px);
+  left: calc(50% - 38px);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 }

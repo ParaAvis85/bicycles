@@ -60,6 +60,15 @@
   position: relative;
   margin-right: 8.5%;
   padding-left: 47px;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .contacts__link-phone {
@@ -69,4 +78,13 @@
   color: $contacts-50;
   position: relative;
   padding-left: 47px;
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
