@@ -50,6 +50,8 @@
   justify-content: center;
   padding-left: 190px;
   padding-right: 210px;
+
+  fill: $white;
 }
 
 .contacts__link-mail {
@@ -60,6 +62,12 @@
   position: relative;
   margin-right: 8.5%;
   padding-left: 47px;
+
+  svg {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+  }
 
   &:hover,
   &:focus {
@@ -78,6 +86,12 @@
   color: $contacts-50;
   position: relative;
   padding-left: 47px;
+
+  svg {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+  }
 
   &:hover,
   &:focus {
