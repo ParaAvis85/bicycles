@@ -7,6 +7,14 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: 19px;
+
+
+  @media (max-width: $only-tablet-width) {
+    @include text (18px, 28px);
+    color: $black;
+    letter-spacing: -0.005em;
+    margin-bottom: 30px;
+  }
 }
 
 .form__row {

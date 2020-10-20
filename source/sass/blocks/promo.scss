@@ -20,11 +20,35 @@
   }
 }
 
+.promo__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  @media (max-width: $only-tablet-width) {
+    padding-top: 23px;
+    padding-left: 23px;
+    width: 130px;
+  }
+}
+
+.promo__text-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 .promo__title {
   @include text(46px, 64px);
   color: $white;
   font-weight: 700;
   letter-spacing: -0.005em;
+
+  @media (max-width: $only-tablet-width) {
+    @include text (30px, 42px);
+    padding-top: 60px;
+    width: 60%;
+    margin: 0 auto 19px;
+  }
 }
 
 .promo__text {
@@ -46,13 +70,41 @@
   @media (max-width: 1150px) {
     padding-left: 10%;
   }
+
+  @media (max-width: $only-tablet-width) {
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
 }
 
 .promo__content-wrapper {
-  width: 400px;
   margin-right: 14.6%;
+
+  @media (min-width: $desktop-width-min) {
+    width: 400px;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    background-color: $black;
+    background-image: url("../img/bg-promo-tablet.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 330px;
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
 }
 
 .promo__form-wrapper {
   width: 327px;
+
+  @media (max-width: $only-tablet-width) {
+    width: 42%;
+    margin: 0 auto;
+  }
 }
