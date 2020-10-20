@@ -30,6 +30,10 @@
     left: calc(50% - 15px);
     color: $aqua;
   }
+
+  @media (max-width: $desktop-width-min) {
+    width: 180px;
+  }
 }
 
 .about__title {
@@ -39,6 +43,12 @@
   color: $title;
   text-align: center;
   margin-bottom: 40px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text (24px, 41px);
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .about__text {

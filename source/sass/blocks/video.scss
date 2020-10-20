@@ -1,5 +1,11 @@
 .video {
-  background-color: $background-video;
+  background-image: linear-gradient(to bottom, #131314 87%, $white 87%);
+  margin-bottom: 143px;
+
+  @media (max-width: $only-tablet-width) {
+    background-image: linear-gradient(to bottom, #131314 81.5%, $white 81.5%);
+    margin-bottom: 60px;
+  }
 }
 
 .video__wrapper-text {

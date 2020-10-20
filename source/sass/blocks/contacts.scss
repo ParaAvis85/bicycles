@@ -6,6 +6,17 @@
   width: 40%;
   margin: 0 auto 40px;
   padding-left: 18px;
+
+  @media (max-width: $only-tablet-width) {
+    width: 95%;
+    margin-bottom: 20px;
+    padding-left: 35px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: 90%;
+    padding-left: 12px;
+  }
 }
 
 .contacts__title {
@@ -15,6 +26,15 @@
   color: $title;
   text-align: center;
   margin-bottom: 30px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text (24px, 30px);
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    @include text (18px, 30px);
+  }
 }
 
 .contacts__text {
@@ -29,6 +49,19 @@
   height: 530px;
   position: relative;
   margin: 0 auto 34px;
+
+  @media (max-width: $only-tablet-width) {
+    width: 90%;
+    height: 545px;
+    margin-bottom: 17px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    height: 250px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__map-iframe {
@@ -52,6 +85,15 @@
   padding-right: 210px;
 
   fill: $white;
+
+  @media (max-width: $only-tablet-width) {
+    padding-left: 90px;
+    padding-right: 110px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 0;
+  }
 }
 
 .contacts__link-mail {
