@@ -1,0 +1,60 @@
+.about {
+  margin-bottom: 150px;
+}
+
+.about__list {
+  @include no-list;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  justify-content: space-between;
+  padding: 0 25px;
+  counter-reset: myCounter;
+}
+
+.about__item {
+  width: 263px;
+  padding-top: 63px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    @include text (28px, 38px);
+    content: "0" counter(myCounter);
+    counter-increment: myCounter;
+    font-weight: 700;
+    letter-spacing: -1.27px;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 15px);
+    color: $aqua;
+  }
+
+  @media (max-width: $desktop-width-min) {
+    width: 180px;
+  }
+}
+
+.about__title {
+  @include text (30px, 30px);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: $title;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text (24px, 41px);
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.about__text {
+  @include zero-indent;
+  @include text (22px, 34px);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: $black;
+}

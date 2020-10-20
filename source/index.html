@@ -4,10 +4,205 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Интернет-магазин велосипедов Moon</title>
+  <meta name="description" content="Проект лендинга магазина велосипедов Moon">
+  <link rel="preload" href="fonts/opensans-light.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/overpass-regular.woff2" as="font" type="font/woff2">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  <h1>проверка</h1>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
+  <header class="page-header">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#about">О нас</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#types-bicycles">Виды велосипедов</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#video">Видео про велосипеды</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="promo">
+      <div class="promo__wrapper container">
+        <div class="promo__content-wrapper">
+          <a class="promo__logo">
+            <img src="img/logo.svg" width="68" height="20" alt="Логотип интернет-магазина Moon">
+          </a>
+          <div class="promo__text-wrapper">
+            <h1 class="promo__title">
+              Мы продаем
+              велосипеды
+            </h1>
+            <p class="promo__text">
+              Наш магазин отбирает только самые
+              лучшие велосипеды для продажи
+            </p>
+            </div>
+          </div>
+          <div class="promo__form-wrapper">
+            <form class="promo__form form" method="POST" action="https://echo.htmlacademy.ru">
+              <p class="form__text">
+                Заполните поля ниже и мы подберем велосипед Вашей мечты
+              </p>
+              <div class="form__row">
+                <label class="form__label">
+                  <input class="form__input form__input--name" type="text" name="name" placeholder="Введите Ваше Имя" required>
+                </label>
+              </div>
+              <div class="form__row">
+                <label class="form__label">
+                  <input class="form__input form__input--phone" type="text" name="phone" placeholder="Введите Ваш номер телефона" required>
+                </label>
+              </div>
+            <button class="form__button button" type="submit">
+              Подобрать велосипед мечты
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__wrapper container">
+      <h2 class="about__title">
+        Несколько фактов о нас
+      </h2>
+      <ol class="about__list">
+        <li class="about__item">
+          <p class="about__text">Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="about__item">
+          <p class="about__text">Профессиональные консультации!</p>
+        </li>
+      </ol>
+    </div>
+    </section>
+
+    <section class="types-bicycles" id="types-bicycles">
+      <div class="types-bicycles__wrapper container">
+      <h2 class="types-bicycles__title">
+        Виды велосипедов
+      </h2>
+      <ul class="types-bicycles__list">
+        <li class="types-bicycles__item">
+          <a class="types-bicycles__item-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/road-bikes-desktop.webp 1x, img/road-bikes-desktop@2x.webp 2x">
+              <img src="img/road-bikes-desktop.jpg" srcset="img/road-bikes-desktop@2x.jpg" width="342" height="503" alt="Дорожный велосипед">
+            </picture>
+            <h3 class="types-bicycles__text">Дорожный велосипед</h3>
+          </a>
+        </li>
+        <li class="types-bicycles__item">
+          <a class="types-bicycles__item-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/mountain-bikes-desktop.webp 1x, img/mountain-bikes-desktop@2x.webp 2x">
+              <img src="img/mountain-bikes-desktop.jpg" srcset="img/mountain-bikes-desktop@2x.jpg" width="342" height="566" alt="Горный велосипед">
+            </picture>
+            <h3 class="types-bicycles__text">Горный велосипед</h3>
+          </a>
+        </li>
+        <li class="types-bicycles__item">
+          <a class="types-bicycles__item-link" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/kids-bikes-desktop.webp 1x, img/kids-bikes-desktop@2x.webp 2x">
+              <img src="img/kids-bikes-desktop.jpg" srcset="img/kids-bikes-desktop@2x.jpg" width="342" height="503" alt="Детский велосипед">
+            </picture>
+            <h3 class="types-bicycles__text">Детский велосипед</h3>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </section>
+
+    <section class="video" id="video">
+      <div class="video__wrapper container">
+      <div class="video__wrapper-text">
+        <h2 class="video__title">
+          Видео про велосипеды
+        </h2>
+        <p class="video__text">
+          В этом видео мы подробно расскажем про
+          особенности выбора велосипеда для себя.
+        </p>
+      </div>
+      <div class="video__img-wrapper">
+        <picture>
+          <source type="image/webp" srcset="img/video-img-desktop.webp 1x, img/video-img-desktop@2x.webp 2x">
+          <img src="img/video-img-desktop.jpg" srcset="img/video-img-desktop@2x.jpg"  width="929" height="522"
+            alt="Видео о велосипедах">
+          </picture>
+        <button class="video__button-play" type="button" aria-label="Кнопка воспроизведения видео">
+          <svg class="video__icon-play" width="65" height="65">
+            <use xlink:href="#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="contacts" id="contacts">
+        <div class="contacts__wrapper-text container">
+          <h2 class="contacts__title">
+            Как нас найти?
+          </h2>
+          <p class="contacts__text">
+            Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
+          </p>
+        </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1589733413226!5m2!1sru!2sru"
+            height="530" aria-label="Интерактивная карта" tabindex="0"></iframe>
+            <picture>
+              <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@x2.webp 2x">
+              <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg 2x"  height="530"
+              alt="Месторасположение магазина Moon на карте">
+            </picture>
+        </div>
+        <div class="contacts__wrapper-list container">
+          <a class="contacts__link-mail" href="mailto:puteshestviemechta@gmail.ru">
+            <svg width="26" height="20">
+              <use xlink:href="#icon-mail"></use>
+            </svg>
+            <span>puteshestviemechta@gmail.ru</span>
+          </a>
+          <a class="contacts__link-phone" href="tel:+749978468446">
+            <svg width="22" height="24">
+              <use xlink:href="#icon-phone"></use>
+            </svg>
+            <span>+7 (499) -784-684-46</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,68 @@
+.form__text {
+  @include text (17px, 28px);
+  color: $white;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 19px;
+
+
+  @media (max-width: $only-tablet-width) {
+    @include text (18px, 28px);
+    color: $black;
+    letter-spacing: -0.005em;
+    margin-bottom: 30px;
+  }
+}
+
+.form__row {
+  margin-bottom: 20px;
+}
+
+.form__input {
+  @include text (15px, 24px);
+  color: $placeholder;
+  font-weight: 400;
+  border: 1px solid $border;
+  border-radius: 4px;
+  padding: 11px 30px;
+  height: 48px;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $aqua;
+    box-shadow: inset 0 0 0 2px $aqua;
+    opacity: 0.9;
+
+    &::placeholder {
+      color: $aqua;
+    }
+  }
+}
+
+.form__button {
+  @include text (15px, 21px);
+  font-weight: 600;
+  color: $black;
+  text-align: center;
+  background-color: $aqua;
+  width: 100%;
+  padding: 15px 25px;
+
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

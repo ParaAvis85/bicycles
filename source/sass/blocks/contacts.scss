@@ -1,0 +1,146 @@
+.contacts {
+  margin-bottom: 20px;
+}
+
+.contacts__wrapper-text {
+  width: 40%;
+  margin: 0 auto 40px;
+  padding-left: 18px;
+
+  @media (max-width: $only-tablet-width) {
+    width: 95%;
+    margin-bottom: 20px;
+    padding-left: 35px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    width: 90%;
+    padding-left: 12px;
+  }
+}
+
+.contacts__title {
+  @include text (30px, 30px);
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: $title;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (max-width: $only-tablet-width) {
+    @include text (24px, 30px);
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    @include text (18px, 30px);
+  }
+}
+
+.contacts__text {
+  @include text (17px, 31px);
+  font-weight: 400;
+  text-align: center;
+  color: $contacts-70;
+}
+
+.contacts__map {
+  width: 67%;
+  height: 530px;
+  position: relative;
+  margin: 0 auto 34px;
+
+  @media (max-width: $only-tablet-width) {
+    width: 90%;
+    height: 545px;
+    margin-bottom: 17px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    height: 250px;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
+.contacts__map-iframe {
+  display: block;
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__wrapper-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 190px;
+  padding-right: 210px;
+
+  fill: $white;
+
+  @media (max-width: $only-tablet-width) {
+    padding-left: 90px;
+    padding-right: 110px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 0;
+  }
+}
+
+.contacts__link-mail {
+  @include text (16px, 22px);
+  font-weight: 400;
+  align-items: center;
+  color: $contacts-50;
+  position: relative;
+  margin-right: 8.5%;
+  padding-left: 47px;
+
+  svg {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.contacts__link-phone {
+  @include text (16px, 32px);
+  font-weight: 400;
+  align-items: center;
+  color: $contacts-50;
+  position: relative;
+  padding-left: 47px;
+
+  svg {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
