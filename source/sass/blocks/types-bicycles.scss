@@ -23,11 +23,17 @@
   @include no-list;
   @include zero-indent;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: 1244px) {
     width: 90%;
     margin: 0 auto;
     justify-content: center;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    margin: 0 auto;
+    width: 270px;
   }
 }
 
@@ -60,7 +66,26 @@
     margin-bottom: 25px;
     margin-right: 3%;
   }
+
+  @media (max-width: $only-tablet-width) {
+    margin-right: 0;
+    padding-right: 47px;
+  }
 }
+
+.types-bicycles__item:not(:nth-child(2n)) {
+  @media (max-width: $only-tablet-width) {
+    margin-right: 0;
+    padding-left: 47px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 
 .types-bicycles__item:nth-child(3n + 1) {
   padding-left: 60px;
@@ -86,10 +111,20 @@
       width: 127px;
       height: 127px;
     }
+
+    @media (max-width: $only-mobile-width) {
+      top: 200px;
+      left: -25px;
+      border: 18px solid #0ad9c6;
+    }
   }
 
   @media (max-width: 1244px) {
     padding-top: 0;
+    padding-left: 0;
+  }
+
+  @media (max-width: $only-mobile-width) {
     padding-left: 0;
   }
 }
@@ -100,6 +135,14 @@
   padding-right: 20px;
   padding-top: 78px;
   position: relative;
+
+
+  @media (max-width: 1244px) {
+    padding-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   @media (min-width: 1245px) {
     &::before {
@@ -125,11 +168,8 @@
     }
   }
 
-  @media (max-width: 1244px) {
-    padding-top: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
+  @media (max-width: $only-mobile-width) {
+    padding: 0;
   }
 }
 
@@ -156,11 +196,25 @@
       right: -25px;
       border: 12px solid $aqua;
     }
+
+    @media (max-width: $only-tablet-width) {
+      right: 21px;
+    }
+
+    @media (max-width: $only-mobile-width) {
+      top: -18px;
+      right: -15px;
+    }
   }
 
   @media (max-width: 1244px) {
     margin-left: 0;
     padding-top: 0;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 0;
+    margin-left: 0;
   }
 }
 
@@ -169,7 +223,6 @@
   height: 100%;
   object-fit: cover;
   object-position: 0 0;
-  transition: 0.3s;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -179,10 +232,6 @@
 
   &--road {
     height: 503px;
-
-    img {
-      object-position: -20px 0;
-    }
   }
 
   &--mountain {
@@ -195,43 +244,11 @@
 
   &--kids {
     height: 513px;
-
-    img {
-      object-position: -50px 0;
-    }
   }
 
   @media (max-width: 1244px) {
     width: 270px;
     height: 300px;
-
-    &--road {
-      height: 300px;
-
-      img {
-        object-position: 0 -30px;
-      }
-    }
-
-    &--mountain {
-      height: 300px;
-
-      img {
-        object-position: 0 -55px;
-      }
-    }
-
-    &--kids {
-      height: 300px;
-
-      img {
-        object-position: 0 -20px;
-
-        @media (max-width: 1244px) {
-          object-position: 0 -10px;
-        }
-      }
-    }
   }
 }
 
