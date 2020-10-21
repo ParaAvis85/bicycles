@@ -97,7 +97,7 @@
 }
 
 .contacts__link-mail {
-  @include text (16px, 22px);
+  @include text (16px, 32px);
   font-weight: 400;
   align-items: center;
   color: $contacts-50;
@@ -109,6 +109,18 @@
     position: absolute;
     top: 7px;
     left: 5px;
+  }
+
+  @media (max-width: $only-tablet-width) {
+    margin-right: 80px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 15px;
+  }
+
+  @media (max-width: 542px) {
+    margin-right: 0;
   }
 
   &:hover,
@@ -128,6 +140,10 @@
   color: $contacts-50;
   position: relative;
   padding-left: 47px;
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 15px;
+  }
 
   svg {
     position: absolute;
