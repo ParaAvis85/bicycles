@@ -59,6 +59,12 @@
   @media (max-width: $only-tablet-width) {
     padding-right: 40px;
   }
+
+  @media (max-width: $only-mobile-width) {
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .types-bicycles__item {

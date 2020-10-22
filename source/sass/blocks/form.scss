@@ -15,6 +15,10 @@
     letter-spacing: -0.005em;
     margin-bottom: 30px;
   }
+
+  @media (max-width: $only-mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__row {
@@ -30,6 +34,14 @@
   padding: 11px 30px;
   height: 48px;
   width: 100%;
+
+  @media (max-width: $only-tablet-width) {
+    padding: 11px 20px;
+  }
+
+  @media (max-width: $only-mobile-width) {
+    padding: 11px 25px;
+  }
 
   &:hover,
   &:focus {

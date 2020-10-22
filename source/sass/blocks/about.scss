@@ -69,10 +69,6 @@
     left: calc(50% - 15px);
     color: $aqua;
   }
-
-  @media (max-width: $desktop-width-min) {
-    width: 180px;
-  }
 }
 
 .about__title {
