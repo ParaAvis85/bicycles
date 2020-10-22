@@ -31,7 +31,6 @@
 .video__title {
   @include text (30px, 30px);
   font-weight: 600;
-
   letter-spacing: -0.005em;
   color: $white;
   text-align: center;

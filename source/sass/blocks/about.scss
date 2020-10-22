@@ -99,5 +99,6 @@
 
   @media (max-width: $only-mobile-width) {
     @include text (18px, 34px);
+    font-family: $font-other;
   }
 }
