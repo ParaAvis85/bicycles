@@ -29,7 +29,7 @@
   }
 }
 
-.about__item {
+.about__list li {
   width: 263px;
   padding-top: 63px;
   text-align: center;
@@ -71,7 +71,7 @@
   }
 }
 
-.about__title {
+.about h2 {
   @include text (30px, 30px);
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -86,7 +86,7 @@
   }
 }
 
-.about__text {
+.about__list p {
   @include zero-indent;
   @include text (22px, 34px);
   font-weight: 400;

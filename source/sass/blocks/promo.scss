@@ -50,7 +50,7 @@
   }
 }
 
-.promo__title {
+.promo h1 {
   @include text(46px, 64px);
   color: $white;
   font-weight: 700;
@@ -71,7 +71,7 @@
   }
 }
 
-.promo__text {
+.promo__text-wrapper p {
   @include text(20px, 32px);
   color: $white;
   font-weight: 300;

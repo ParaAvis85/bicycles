@@ -19,7 +19,7 @@
   }
 }
 
-.contacts__title {
+.contacts__wrapper-text h2 {
   @include text (30px, 30px);
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -37,7 +37,7 @@
   }
 }
 
-.contacts__text {
+.contacts__wrapper-text p {
   @include text (17px, 31px);
   font-weight: 400;
   text-align: center;
