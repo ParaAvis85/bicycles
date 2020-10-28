@@ -130,6 +130,7 @@
 
   @media (max-width: $only-mobile-width) {
     padding-left: 0;
+    margin-bottom: 17px;
   }
 }
 
@@ -163,7 +164,7 @@
     &::after {
       position: absolute;
       content: "";
-      top: 55px;
+      top: 60px;
       left: 0;
       width: 47px;
       height: 47px;
@@ -174,6 +175,7 @@
 
   @media (max-width: $only-mobile-width) {
     padding: 0;
+    margin-bottom: 17px;
   }
 }
 
@@ -219,6 +221,7 @@
   @media (max-width: $only-mobile-width) {
     padding: 0;
     margin-left: 0;
+    margin-bottom: 17px;
   }
 }
 

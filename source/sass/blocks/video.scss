@@ -34,6 +34,7 @@
   letter-spacing: -0.005em;
   color: $white;
   text-align: center;
+  margin-top: 0;
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 30px);

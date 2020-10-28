@@ -42,10 +42,11 @@
     margin: 0 auto;
     text-align: center;
     padding-bottom: 30px;
+    margin-bottom: 52px;
   }
 
   @media (max-width: $only-mobile-width) {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
   }
 }
 
@@ -54,6 +55,8 @@
   color: $white;
   font-weight: 700;
   letter-spacing: -0.005em;
+  margin-top: 0;
+  margin-bottom: 25px;
 
   @media (max-width: $only-tablet-width) {
     @include text (30px, 42px);
@@ -122,7 +125,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 330px;
-    margin-bottom: 60px;
     margin-right: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -135,11 +137,13 @@
     background-image: url("../img/bg-promo-mobile.jpg");
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 65px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-promo-mobile@2x.jpg");
       background-repeat: no-repeat;
-      background-size: 570px auto;
+      background-size: 100% auto;
+      background-position: 50% 25%;
     }
   }
 }
