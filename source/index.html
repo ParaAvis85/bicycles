@@ -63,17 +63,11 @@
               <p>
                 Заполните поля ниже и мы подберем велосипед Вашей мечты
               </p>
-              <div class="form__row">
-                <label class="form__label">
-                  <input type="text" name="name" placeholder="Введите Ваше Имя" required>
-                </label>
-              </div>
-              <div class="form__row">
-                <label class="form__label">
-                  <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона"
+                <label class="visually-hidden" for="name">Поле для ввода имени</label>
+                <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required>
+                <label class="visually-hidden" for="phone">Поле для ввода номера телефона</label>
+                <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона"
                 pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" required>
-                </label>
-              </div>
             <button type="submit">
               Подобрать велосипед мечты
             </button>
