@@ -83,7 +83,7 @@
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 41px);
-    padding-left: 0;
+    padding-left: 16px;
     margin-bottom: 20px;
   }
 }
