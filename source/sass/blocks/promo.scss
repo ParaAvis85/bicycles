@@ -22,7 +22,7 @@
 
 .promo__logo {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   @media (max-width: $only-tablet-width) {
     padding-top: 23px;
@@ -56,7 +56,7 @@
   font-weight: 700;
   letter-spacing: -0.005em;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   @media (max-width: $only-tablet-width) {
     @include text (30px, 42px);

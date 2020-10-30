@@ -13,7 +13,7 @@
 }
 
 .video__wrapper-text {
-  width: 350px;
+  width: 360px;
   margin: 0 auto;
   padding-top: 120px;
 
@@ -34,7 +34,8 @@
   letter-spacing: -0.005em;
   color: $white;
   text-align: center;
-  margin-top: 0;
+  margin: 0 0 20px;
+  padding-right: 5px;
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 30px);
