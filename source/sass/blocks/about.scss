@@ -20,9 +20,14 @@
   padding: 0 25px;
   counter-reset: myCounter;
 
+  @media (max-width: 1117px) {
+    padding: 0 10px;
+  }
+
   @media (max-width: $only-tablet-width) {
     padding: 0 70px;
   }
+
 
   @media (max-width: $only-mobile-width) {
     padding: 0;
@@ -30,7 +35,7 @@
 }
 
 .about__list li {
-  width: 263px;
+  width: 260px;
   padding-top: 63px;
   text-align: center;
   position: relative;
@@ -39,23 +44,18 @@
     width: 240px;
   }
 
-  @media (max-width: 1024px) {
-    width: 180px;
-  }
-
-  @media (max-width: 1023px) {
+  @media (max-width: $only-tablet-width) {
     padding-top: 65px;
     margin-bottom: 29px;
+    width: 275px;
   }
 
   @media (max-width: 998px) {
-    width: 260px;
+    width: 265px;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    // padding-top: 65px;
-    // margin-bottom: 40px;
   }
 
   &::after {
