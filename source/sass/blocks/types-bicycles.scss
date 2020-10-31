@@ -110,10 +110,11 @@
     z-index: -1;
 
     @media (max-width: 1244px) {
-      top: 205px;
-      left: -45px;
+      top: 202px;
+      left: -40px;
       width: 127px;
       height: 127px;
+      border: 18px solid #0ad9c6;
     }
 
     @media (max-width: $only-mobile-width) {
