@@ -34,6 +34,9 @@
 
   @media (max-width: $only-mobile-width) {
     @include text (18px, 30px);
+    margin-bottom: 20px;
+    padding-left: 3px;
+    padding-top: 3px;
   }
 }
 
@@ -144,12 +147,18 @@
 
   @media (max-width: $only-mobile-width) {
     margin-bottom: 15px;
+    padding-left: 27px;
   }
 
   svg {
     position: absolute;
     top: 4px;
     left: 10px;
+
+    @media (max-width: $only-mobile-width) {
+      top: 0;
+      left: -9px;
+    }
   }
 
   &:hover,

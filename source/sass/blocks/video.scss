@@ -39,6 +39,10 @@
   @media (max-width: $only-tablet-width) {
     @include text (24px, 30px);
   }
+
+  @media (max-width: $only-mobile-width) {
+    padding-right: 8px;
+  }
 }
 
 .video p {
