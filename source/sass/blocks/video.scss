@@ -35,6 +35,7 @@
   text-align: center;
   margin: 0 0 20px;
   padding-right: 5px;
+  letter-spacing: -0.005em;
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 30px);
@@ -55,6 +56,7 @@
 
   @media (max-width: $only-tablet-width) {
     margin-bottom: 40px;
+    letter-spacing: -0.005em;
   }
 
   @media (max-width: $only-mobile-width) {

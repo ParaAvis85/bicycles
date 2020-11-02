@@ -35,7 +35,7 @@
 }
 
 .about__list li {
-  width: 260px;
+  width: 263px;
   padding-top: 63px;
   text-align: center;
   position: relative;
@@ -107,6 +107,7 @@
   margin-bottom: 40px;
   padding-left: 40px;
   padding-right: 20px;
+  letter-spacing: -0.005em;
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 41px);
@@ -125,15 +126,16 @@
   @include text (22px, 34px);
   font-weight: 400;
   color: $black;
+  letter-spacing: -0.5px;
 
   @media (max-width: $only-tablet-width) {
     @include text (22px, 34px);
-    letter-spacing: 0.4px;
     padding-left: 3px;
   }
 
   @media (max-width: $only-mobile-width) {
     @include text (18px, 34px);
     font-family: $font-other;
+    letter-spacing: -0.005em;
   }
 }

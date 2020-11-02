@@ -63,7 +63,6 @@
     padding-top: 60px;
     width: 60%;
     margin: 0 auto 19px;
-    letter-spacing: 0.7px;
   }
 
   @media (max-width: $only-mobile-width) {
@@ -77,6 +76,7 @@
   color: $white;
   font-weight: 300;
   opacity: 0.8;
+  letter-spacing: -0.005em;
 
 
   @media (max-width: $only-tablet-width) {
