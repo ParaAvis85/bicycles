@@ -54,7 +54,7 @@
   @include text(46px, 64px);
   color: $white;
   font-weight: 700;
-  letter-spacing: -0.005em;
+  letter-spacing: 1.7px;
   margin-top: 0;
   margin-bottom: 24px;
 
@@ -63,6 +63,7 @@
     padding-top: 60px;
     width: 60%;
     margin: 0 auto 19px;
+    letter-spacing: 0.9px;
   }
 
   @media (max-width: $only-mobile-width) {
@@ -76,7 +77,7 @@
   color: $white;
   font-weight: 300;
   opacity: 0.8;
-  letter-spacing: -0.005em;
+  padding-left: 2px;
 
 
   @media (max-width: $only-tablet-width) {

@@ -22,7 +22,6 @@
 .contacts__wrapper-text h2 {
   @include text (30px, 30px);
   font-weight: 600;
-  letter-spacing: -0.005em;
   color: $title;
   text-align: center;
   margin-bottom: 30px;
@@ -45,6 +44,7 @@
   font-weight: 400;
   text-align: center;
   color: $contacts-70;
+  letter-spacing: 0.4px;
 }
 
 .contacts__map {
@@ -105,7 +105,7 @@
   align-items: center;
   color: $contacts-50;
   position: relative;
-  margin-right: 8.5%;
+  margin-right: 9.1%;
   padding-left: 47px;
 
   svg {

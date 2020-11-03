@@ -34,11 +34,11 @@
   color: $white;
   text-align: center;
   margin: 0 0 20px;
-  padding-right: 5px;
-  letter-spacing: -0.005em;
+  padding-right: 8px;
 
   @media (max-width: $only-tablet-width) {
     @include text (24px, 30px);
+    padding-right: 1px;
   }
 
   @media (max-width: $only-mobile-width) {

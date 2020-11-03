@@ -126,7 +126,6 @@
   @include text (22px, 34px);
   font-weight: 400;
   color: $black;
-  letter-spacing: -0.5px;
 
   @media (max-width: $only-tablet-width) {
     @include text (22px, 34px);
